@@ -60,7 +60,7 @@ dotnet ef database update -s AtlanticCarsPortal.API
  -> Fill up the car with the informed id with the informed amount of gasoline in liters
  
   * ```/Cars/ActvateNewType```
- -> Change the type of car with the id informed and the type informed, see the types of existing lists in the **Functions of the project**
+ -> Change the type of car with the id informed and the type informed, see the types of existing lists in the **Cars type legends**
  
  --------------------------------------------------------------------------------------------------------------
  ## app features
