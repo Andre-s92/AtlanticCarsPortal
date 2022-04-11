@@ -41,8 +41,13 @@ namespace AtlanticCarsPortal.Application.Services
                     return "Tank is already full";               
                 availableCapacity = car.TankCapacity - car.QtdTankLiter;
                 if(amount > availableCapacity)
+                {
                     car.QtdTankLiter += availableCapacity;
-                car.QtdTankLiter += amount;
+                }
+                else
+                {
+                    car.QtdTankLiter += amount;
+                }                  
                 _baseRepository.Update(car);
                 if (await _baseRepository.SaveChangesAsync())
                 {
